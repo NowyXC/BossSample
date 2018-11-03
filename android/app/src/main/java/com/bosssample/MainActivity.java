@@ -1,4 +1,4 @@
-package com.bosssample;
+package com.nowy.bosssample;
 
 import com.facebook.react.ReactActivity;
 

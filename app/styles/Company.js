@@ -1,0 +1,162 @@
+import {Platform, StyleSheet} from 'react-native';
+
+const CompanyStyle = StyleSheet.create({
+    container: {
+        flex: 1,
+        flexDirection:'column',
+        backgroundColor: '#F5FCFF',
+      },
+    titlebar:{
+        flexDirection:'row',
+        alignItems:'center',
+        height:44,
+        backgroundColor:'#53cac3',
+        paddingLeft:16
+    },
+    titlebarTab:{
+        flex:1,
+        color:'white',
+        fontSize:16,
+        fontWeight:'bold',
+        textAlign:'center'
+
+    },
+    titlebarImg:{
+        height:44,
+        width:44,
+    },
+    titlebarLineVertical:{
+        height:28,
+        width:1,
+        backgroundColor:'white',
+        backgroundColor:'rgba(255,255,255,0.3)'
+    },
+    filterbar:{
+        flexDirection:'row',
+        backgroundColor:'white',
+        height:40,
+    },
+    filterContent:{
+        flex:1,
+        justifyContent:'center',
+        flexDirection:'row',
+        alignItems:'center',
+    },
+    filterText:{
+        fontSize:12,
+        color:'#a7a7a7'
+    },
+    filterImg:{
+        width:8,
+        height:8,
+        marginLeft:6
+    },
+
+    filterLineVertical:{
+        width:1,
+        height:16,
+        alignSelf:'center',
+        backgroundColor:'#ccc',
+    },
+
+    filterBottomLine:{
+        backgroundColor:'#e1e1e1',
+        height:0.5,
+        shadowColor:'#f3f3f6',
+        shadowOffset:{ width : 0 , height:1},
+        shadowOpacity:1
+    },
+    list:{
+        flex: 1,
+    },
+    itemContainer:{
+        height:140,
+        flexDirection:'column',
+        backgroundColor:'white',
+        paddingLeft:16,
+        paddingRight:16,
+        paddingTop:12,
+        paddingBottom:12,
+        marginBottom:6
+    },
+   
+    itemCompanyInfo:{
+        flexDirection:'row'
+    },
+    itemCompanyLogo:{
+        width:42,
+        height:42,
+        borderRadius:6
+    },
+    itemCompanyInfoRight:{
+        marginLeft:12
+    },
+    itemCompanyName:{
+        fontSize:16,
+        color:'#333'
+    },
+    itemCompanyAddress:{
+        fontSize:14,
+        color:'#333'
+    },
+    itemContent:{
+        flexDirection:'row',
+        marginTop:14,
+    },
+    itemFinancingInfo:{
+        fontSize:12,
+        color:'#a7a7a7',
+        fontFamily:'KaiTi',
+        backgroundColor:'#f8f8f8',
+        borderRadius:4,
+        paddingLeft:6,
+        paddingRight:6,
+        textAlignVertical:'center'        
+    },
+    itemCompanySize:{
+        fontSize:12,
+        color:'#a7a7a7',
+        fontFamily:'KaiTi',
+        backgroundColor:'#f8f8f8',
+        borderRadius:4,
+        paddingLeft:6,
+        paddingRight:6,
+        textAlignVertical:'center',
+        marginLeft:10 
+    },
+    itemIndustryInfo:{
+        fontSize:12,
+        color:'#a7a7a7',
+        fontFamily:'KaiTi',
+        backgroundColor:'#f8f8f8',
+        borderRadius:4,
+        paddingLeft:6,
+        paddingRight:6,
+        textAlignVertical:'center',
+        marginLeft:10 
+    },
+    itemContentBottomLine:{
+        backgroundColor:'#e1e1e1',
+        height:0.5,
+        marginTop:12,
+        marginBottom:12
+    },
+    itemRecruitment:{
+        flexDirection:'row'
+    },
+    itemRecruitmentInfo:{
+        flex:1,
+        color:'#a7a7a7',
+        fontSize:12
+    },
+    itemRecruitmentJob:{
+        color:'#63c0c3',
+    },
+    itemRecruitmentArrow:{
+        width:20,
+        height:20
+    }
+
+});
+
+export default CompanyStyle;
