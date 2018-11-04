@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import {Text, View} from 'react-native';
 
-import MainStyle from './../../styles/Main';
 
 import {createStackNavigator,createBottomTabNavigator} from 'react-navigation';
 
