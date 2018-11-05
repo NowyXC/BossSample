@@ -1,0 +1,124 @@
+import {Platform, StyleSheet} from 'react-native';
+
+const MineStyle = StyleSheet.create({
+    container: {
+        flex: 1,
+        flexDirection:'column',
+        backgroundColor: '#f8f8f8',
+      },
+    titlebar:{
+        flexDirection:'row',
+        justifyContent:'space-between',
+        alignItems:'center',
+        height:44,
+        backgroundColor:'#53cac3',
+    },
+    titlebarImg:{
+        width:44,
+        height:44,
+    },
+    scrollView:{
+    },
+    header:{
+       height:160,
+       backgroundColor:'#52c9c3',
+       flexDirection:'row',
+       justifyContent:'space-between'
+    },
+    headerContainer:{
+        flexDirection:'column',
+        justifyContent:'flex-end',
+        paddingBottom:24,
+        paddingLeft:16
+    },
+    headerName:{
+        fontSize:26,
+        fontWeight:'bold',
+        color:'white'
+    },
+    headerUserIndex:{
+        flexDirection:'row',
+        alignItems:'center',
+        marginTop:12
+    },
+    headerUserIndexTxt:{
+        fontSize:14,
+        color:'rgba(255,255,255,0.95)'
+    },
+    headerUserIndexImg:{
+        width:12,
+        height:12,
+        marginLeft:4
+    },
+    headerUserAvatar:{
+        width:68,
+        height:68,
+        borderRadius:34,
+        borderWidth:2,
+        backgroundColor:'white',
+        borderColor:'rgba(255,255,255,0.85)',
+        marginBottom:24,
+        marginRight:32,
+        alignSelf:'flex-end'
+    },
+    jobInfoBar:{
+        flexDirection:'row',
+        alignItems:'center',
+        height:60,
+        backgroundColor:'white'
+        
+    },
+    jobInfoDivider:{
+        width:1,
+        height:40
+    },
+    toolBar:{
+        height:80,
+        backgroundColor:'white',
+        paddingHorizontal:12,
+        flexDirection:'row',
+        alignItems:'center'
+    },
+    toolBarContainer:{
+        flex:1,
+        flexDirection:'column',
+    },
+    toolBarTitle:{
+        color:'#111',
+        fontSize:16
+    },
+    toolBarContent:{
+        color:'#a7a7a7',
+        fontSize:14,
+        marginTop:4
+    },
+    toolBarHint:{
+        color:'white',
+        width:20,
+        height:20,
+        textAlign:'center',
+        textAlignVertical:'center',
+        fontSize:11,
+        borderRadius:10,
+        backgroundColor:'#fa4551'
+    },
+    toolBarImg:{
+        height:40,
+        width:24,
+    },
+    menuContainer:{
+        backgroundColor:'white',
+        marginTop:16
+    },
+    menuBottomLine:{
+        marginHorizontal:12,
+    },
+    bottomLine:{
+        backgroundColor:'#e1e1e1',
+        height:0.5,
+        shadowColor:'#e1e1e1',
+        shadowOffset:{ width: 0,height: 1 }
+    }
+});
+
+export default MineStyle;
