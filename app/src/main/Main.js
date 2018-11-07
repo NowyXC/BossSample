@@ -7,6 +7,7 @@ import {createStackNavigator,createBottomTabNavigator} from 'react-navigation';
 import Home from './../home/Home';
 import Company from './../company/Company';
 import Message from './../message/Message';
+import MsgTabNavigator from './../message/MsgTabNavigator'
 import Mine from './../mine/Mine';
 
 
@@ -55,7 +56,7 @@ const MainTabNavigator = createBottomTabNavigator({
          }),
     },
     Message:{
-        screen:Message,
+        screen:MsgTabNavigator,
         navigationOptions:({navigation}) => ({
         tabBarLabel:'消息',
         tabBarIcon:({focused,tintColor}) => (

@@ -1,76 +1,53 @@
-import {Platform, StyleSheet} from 'react-native';
+import React,{Component} from 'react';  
+import {
+    View,
+    Text,
+    Image,
+    StyleSheet} from 'react-native';  
 
-const HomeStyle = StyleSheet.create({
-    container: {
-        flex: 1,
-        flexDirection:'column',
-        backgroundColor: '#F5FCFF',
-      },
-    titlebar:{
-        flexDirection:'row',
-        alignItems:'center',
-        height:44,
-        backgroundColor:'#53c9c3',
-        paddingLeft:16
-    },
-    titlebarTab:{
-        flex:1,
-        color:'white',
-        fontSize:16,
-        fontWeight:'bold'
 
-    },
-    titlebarImg:{
-        height:44,
-        width:44,
-    },
-    titlebarLineVertical:{
-        height:28,
-        width:1,
-        backgroundColor:'white',
-        backgroundColor:'rgba(255,255,255,0.3)'
-    },
-    filterbar:{
-        flexDirection:'row',
-        backgroundColor:'white',
-        height:40,
-    },
-    filterContent:{
-        flex:1,
-        justifyContent:'center',
-        flexDirection:'row',
-        alignItems:'center',
-    },
-    filterText:{
-        fontSize:12,
-        color:'#a7a7a7'
-    },
-    filterImg:{
-        width:8,
-        height:8,
-        marginLeft:6
-    },
+export default class JobItem extends React.Component{
+    constructor(props){
+        super(props);
+    }
+    render(){
+        return(
+            <View style={Style.itemContainer}>
+                <View style={Style.itemJobDesc}>                    
+                <Text style={Style.itemJobName}>招聘岗位</Text>
+                    <Text style={Style.itemSalary}>薪资</Text>
+                </View>
+                <View style={Style.itemCompanyDesc}>
+                    <Text style={Style.itemCompanyName}>公司名称</Text>
+                    <Text style={Style.itemCompanyType}>公司类型</Text>
+                </View>
 
-    filterLineVertical:{
-        width:1,
-        height:16,
-        alignSelf:'center',
-        backgroundColor:'#ccc',
-    },
+                 <View style={Style.itemContent}>
+                    <Text style={Style.itemCompanyAddress}>公司地址</Text>
+                    <Text style={Style.itemWorkExp}>工作经验</Text>
+                    <Text style={Style.itemEducation}>学历</Text>
+                </View>
 
-    filterBottomLine:{
-        backgroundColor:'#e1e1e1',
-        height:0.5,
-        shadowColor:'#f3f3f6',
-        shadowOffset:{ width : 0 , height:1},
-        shadowOpacity:1
-    },
-    list:{
-        flex: 1,
-    },
+                <View style={Style.itemRecruiterInfo}>
+                    <Image 
+                        source={require('../../images/avatar/avatar_1.png')}
+                        style={Style.itemRecruiterImg}
+                        />
+                    <Text style={[Style.ItemRecruiterIsVip]}>V</Text>     
+                    <Text style={Style.itemRecruiterName}>招聘者</Text>
+                    <Text style={Style.itemRecruiterJob}> · 招聘者岗位</Text>
+                    <View style={Style.itemFit}/>
+                    <Text style={Style.itemIsNew}>新</Text>
+                </View>
+            </View>
+        );
+    }
+}
+
+
+const Style = StyleSheet.create({
     itemContainer:{
         height:140,
-        
         flexDirection:'column',
         backgroundColor:'white',
         paddingLeft:16,
@@ -177,10 +154,18 @@ const HomeStyle = StyleSheet.create({
     itemRecruiterJob:{
         fontSize:12,
         color:'#333'
-    }
-
-
-
+    },
+    itemFit:{
+        flex:1
+    },
+    itemIsNew:{
+        height:20,
+        width:20,
+        textAlign:'center',
+        textAlignVertical:'center',
+        fontSize:12,
+        color:'white',
+        borderRadius:10,
+        backgroundColor:'red'
+    },
 });
-
-export default HomeStyle;

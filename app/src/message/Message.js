@@ -16,11 +16,6 @@ var JsonData = require('../../assets/json/messageListData.json');
 
 
 
-
-
-
-
-
 class Message extends React.Component{
     constructor(props){
         super(props);
@@ -38,7 +33,7 @@ class Message extends React.Component{
         return(
             <View style={MsgStyle.container}>
                 {/* titlebar */}
-                <View style={MsgStyle.titlebar}>
+                {/* <View style={MsgStyle.titlebar}>
                     <View style={MsgStyle.titlebarBothSides}/>
 
                     <View style={MsgStyle.titleContainer}>
@@ -65,7 +60,7 @@ class Message extends React.Component{
                         resizeMode='center'
                         style={MsgStyle.titlebarBothSides}
                     />
-                </View>
+                </View> */}
                 {/* 消息列表 */}
                 <FlatList 
                     ref={(flatList)=> this._flatList = flatList}

@@ -4,6 +4,7 @@ import Main from './app/src/main/Main';
 
 
 
+
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
   android:

@@ -7,6 +7,9 @@ import {
 
 import HomeStyle from './../../styles/Home';
 
+
+import JobItem from '../components/JobItem'
+
 var JsonData = require( '../../assets/json/jobListData.json');
 
 
@@ -97,32 +100,7 @@ class Home extends React.Component{
 
     _renderRow = ({item}) =>{
         return(
-            <View style={HomeStyle.itemContainer}>
-                <View style={HomeStyle.itemJobDesc}>                    
-                <Text style={HomeStyle.itemJobName}>招聘岗位</Text>
-                    <Text style={HomeStyle.itemSalary}>薪资</Text>
-                </View>
-                <View style={HomeStyle.itemCompanyDesc}>
-                    <Text style={HomeStyle.itemCompanyName}>公司名称</Text>
-                    <Text style={HomeStyle.itemCompanyType}>公司类型</Text>
-                </View>
-
-                 <View style={HomeStyle.itemContent}>
-                    <Text style={HomeStyle.itemCompanyAddress}>公司地址</Text>
-                    <Text style={HomeStyle.itemWorkExp}>工作经验</Text>
-                    <Text style={HomeStyle.itemEducation}>学历</Text>
-                </View>
-
-                <View style={HomeStyle.itemRecruiterInfo}>
-                    <Image 
-                        source={require('../../images/avatar/avatar_1.png')}
-                        style={HomeStyle.itemRecruiterImg}
-                        />
-                    <Text style={[HomeStyle.ItemRecruiterIsVip]}>V</Text>     
-                    <Text style={HomeStyle.itemRecruiterName}>招聘者</Text>
-                    <Text style={HomeStyle.itemRecruiterJob}> · 招聘者岗位</Text>
-                </View>
-            </View>
+            <JobItem />
         );
     }
 }
